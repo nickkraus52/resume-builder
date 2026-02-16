@@ -1,14 +1,8 @@
-/**
- * Express server for the Resume Builder API.
- * Handles REST endpoints and can serve the built React client in production.
- * @module server/index
- */
-
 import express from 'express';
 
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 app.use(express.json());
 
 
